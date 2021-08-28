@@ -13,14 +13,3 @@
 //     hamburger.classList.toggle("toggle");
 // });
 
-let animales = [ "gato", "perro", "caballo"]
-
-for (animal in animales){
-    document.write(animal + "<br>")
-}
-
-    document.write("<br>")
-
-for (animal of animales){
-    document.write(animal + "<br>")
-}
