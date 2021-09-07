@@ -12,4 +12,3 @@
 //     // Hamburger Animate
 //     hamburger.classList.toggle("toggle");
 // });
-
