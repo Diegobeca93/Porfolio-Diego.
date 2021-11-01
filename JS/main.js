@@ -1,24 +1,27 @@
-// const hamburger = document.querySelector(".hamburger");
-// const navLinks = document.querySelector(".nav-links");
-// const links = document.querySelector(".nav-links li");
+(()=>{
+    
+    const openNavBtn = document.querySelector(".open-nav");
+    const closeNavBtn = document.querySelector(".close-nav");
+    const navLinks = document.querySelectorAll(".nav-link");
 
-// hamburger.addEventListener('click', ()=>{
-//     //Animate links
-//     navLinks.classList.toggle("open");
-//     links.forEach(link => {
-//         link.classList.toggle("fade");
-//     });
-
-//     // Hamburger Animate
-//     hamburger.classList.toggle("toggle");
-// });
-
+    openNavBtn.addEventListener("click", toggleNav);
+    closeNavBtn.addEventListener("click", toggleNav);
+    
+    function toggleNav() {
+        document.querySelector(".nav").classList.toggle("open");
+    }
+    navLinks.forEach(link => {
+        link.addEventListener("click", () =>{
+            document.querySelector(".nav").classList.remove("open")
+        })
+    })  
+    
     // Función Stop Scrolling
-function bodyScrollingToggle() {
+    function bodyScrollingToggle() {
     document.body.classList.toggle("stop-scrolling");
-}
-
-/*----------------- porfolio -------------*/
+    }
+    
+    /*----------------- porfolio -------------*/
     const porfolioItemsContainer = document.querySelector("#porfolio-items")
     const porfolioItems = document.querySelectorAll(".porfolio-item")
     const infoProject = document.querySelector(".info-project")
@@ -28,12 +31,12 @@ function bodyScrollingToggle() {
     const mainBtn = document.querySelector(".project-main-btn")
     const projectDetails = document.querySelector(".project-details")
     const projectDetailsbtn = document.querySelector(".project-main-btn")
-
+    
     //Porfolio
     porfolioItemsContainer.addEventListener("click",(Event)=>{
         if(Event.target.closest(".porfolio-item-inner")){
             const porfolioItem = Event.target.closest(".porfolio-item-inner").parentElement;
-
+    
             itemIndex = Array.from(porfolioItem.parentElement.children).indexOf(porfolioItem);
             screenshots = porfolioItems[itemIndex].querySelector(".porfolio-img img").getAttribute("data-screenshots");
             // convert screenshots into Array 
@@ -46,20 +49,21 @@ function bodyScrollingToggle() {
                 nextBtn.style.display="block";
                 prevBtn.style.display="block";
             }
-
+    
             slideIndex = 0;
             projectToggle();    
-            porjectSlideShow()
+            porjectSlideShow();
+            popupDetails();
         }
     })
-
+    
     closeBtn.addEventListener("click",()=> {
         projectToggle();
         if (projectDetails.classList.contains("active")){
             projectDetail();
         }
     })
-
+    
     function projectToggle() {
         infoProject.classList.toggle("open");
         bodyScrollingToggle();
@@ -68,7 +72,7 @@ function bodyScrollingToggle() {
         const imgSrc = screenshots[slideIndex];
         const projectImg = infoProject.querySelector(".p-img");
         projectImg.src = imgSrc;
-
+    
         infoProject.querySelector(".project-counter").innerHTML = (slideIndex+1) + " of " + screenshots.length;
     }
      // next slide
@@ -91,11 +95,23 @@ function bodyScrollingToggle() {
         }
         porjectSlideShow();
     })
+    
+    function popupDetails() {
+        const details = porfolioItems[itemIndex].querySelector(".porfolio-item-details").innerHTML;
+        infoProject.querySelector(".pp-item-details").innerHTML = details;
+    
+        const title = porfolioItems[itemIndex].querySelector(".porfolio-item-title").innerHTML;
+        infoProject.querySelector(".project-details-title h4").innerHTML = title;
 
+        const Category = porfolioItems[itemIndex].getAttribute("data-ca")
+    
+    }
+    
+    
     projectDetailsbtn.addEventListener("click",()=>{
         projectDetail()
     })
-
+    
     function projectDetail() {
         if (projectDetails.classList.contains("active")) {
             projectDetailsbtn.querySelector("i").classList.remove("fa-minus");
@@ -110,3 +126,4 @@ function bodyScrollingToggle() {
             projectDetails.style.maxHeight = projectDetails.scrollHeight + "px";
         }
     } 
+})()
