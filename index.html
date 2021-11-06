@@ -28,6 +28,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
     <!--------- fontswesome> End -------->
     <title>Diego Becacecci</title>
@@ -38,9 +39,9 @@
     <!-- Navegation > start -->
     <header class="header">
         <div class="container-nav">
-            <div class="row justify-content-between align-items-center">
+            <div class="row-nav justify-content-between align-items-center">
                 <div class="logo">
-                    <h5>Diego Becacecci</h5>
+                    <h1>{ <span class="logo-db">DB</span> }</Diego></h1>
                 </div>
                 <button type="button" class="open-nav">
                     <span></span>
@@ -53,7 +54,7 @@
                         <ul class="nav-links">
                             <li><a class="nav-link" data-text="home" href="#Home">Home</a></li>
                             <li><a class="nav-link" data-text="about" href="#About">About</a></li>
-                            <li><a class="nav-link"  data-text="works" href="#Works" >Work</a></li>
+                            <li><a class="nav-link"  data-text="works" href="#Works" >Works</a></li>
                             <li><a class="nav-link"  data-text="contact" href="#Contact">Contact</a></li>
                         </ul>
                     </div>
@@ -66,8 +67,8 @@
 
     <!-- Home > start -->
     <section class="home" id="Home">
-        <video src="./video/ZEPETO_-8585667580147714598.mp4" autoplay muted loop></video>
-        <h1 data-text="Diego Becacecci">
+        <video class="home-video" src="./video/ZEPETO_-8585667580147714598.mp4" autoplay muted loop></video>
+        <h5 data-text="Diego Becacecci">
             <span>D</span>
             <span>I</span>
             <span>E</span>
@@ -83,7 +84,7 @@
             <span>C</span>
             <span>C</span>
             <span>I</span>
-        </h1>
+        </h5>
         <h3 class="home-work">Front End Developer</h3>
     </section>
     <!-- Home > End -->
@@ -114,10 +115,14 @@
             </div>  
             
             <div class="about-info">
-                <p><span>Hi! My name is Diego Becacecci. I am a Web Developer.</span><br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est assumenda laudantium alias ipsum eius sint laboriosam quia molestiae autem veniam, esse tenetur reprehenderit doloribus a! Error, aliquam facere impedit optio itaque magnam placeat saepe quaerat!</p>
+                <p><span>Hi! My name is Diego Becacecci. I am a Web Developer.</span><br>
+                    I am interested in IT and everything in its orbit. Recently I began to be fascinated by web programming, for example: developing applications and building websites.
+                    I study every day to improve my skills and learn new ones, I am eager to gain more experience in this field. For this reason, I am looking for a company willing to offer me a location among its developers. In return, I would offer my utmost commitment and be a nice and friendly addition to your team.
+                    Therefore, I am currently looking for a job as a frontend developer.
+                </p>
                 <div class="btn-inf">
-                    <a href="#" class="CV outer-shadow">Downland CV</a>
-                    <a href="#" class="Hire-me outer-shadow">Hire Me</a> 
+                    <a download="C.V.Diego Becacecci" href="./CV/CV Diego.pdf" class="CV outer-shadow">Downland CV</a>
+                    <a href="#Contact" class="Hire-me outer-shadow">Hire Me</a> 
                 </div>
                
                 <!-- Skill start-->
@@ -125,35 +130,35 @@
                     <div class="wrapper">
                         <div class="icon HTML5">
                             <div class="tooltip">HTML5</div>
-                            <span><i class="fab fa-html5"></i></span>
+                            <span class="iconos"><i class="fab fa-html5"></i></span>
                         </div>
                         <div class="icon CSS3">
                             <div class="tooltip">CSS3</div>
-                            <span><i class="fab fa-css3-alt"></i></span>
+                            <span class="iconos"><i class="fab fa-css3-alt"></i></span>
                         </div>
                         <div class="icon js">
                             <div class="tooltip">JavaScript</div>
-                            <span><i class="fab fa-js-square"></i></span>
+                            <span class="iconos"><i class="fab fa-js-square"></i></span>
                         </div>
                         <div class="icon jquery">
                             <div class="tooltip">JQuery</div>
-                            <span><img class="img-skill" src="https://img.icons8.com/ios-filled/50/000000/jquery.png"/></span>
+                            <span class="iconos"><img class="img-skill" src="https://img.icons8.com/ios-filled/50/000000/jquery.png"/></span>
                         </div>
                         <div class="icon Bootstrap">
                             <div class="tooltip">Bootstrap</div>
-                            <span><i class="fab fa-bootstrap"></i></span>
+                            <span class="iconos"><i class="fab fa-bootstrap"></i></span>
                         </div>
                         <div class="icon SASS">
                             <div class="tooltip">SASS</div>
-                            <span><i class="fab fa-sass"></i></span>
+                            <span class="iconos"><i class="fab fa-sass"></i></span>
                         </div>
                         <div class="icon Git">
                             <div class="tooltip">Git</div>
-                            <span><i class="fab fa-git-alt"></i></span>
+                            <span class="iconos"><i class="fab fa-git-alt"></i></span>
                         </div>
                         <div class="icon GitHub">
                             <div class="tooltip">GitHub</div>
-                            <span><i class="fab fa-github"></i></span>
+                            <span class="iconos"><i class="fab fa-github"></i></span>
                         </div>
                     </div>          
                 </div> 
@@ -183,7 +188,7 @@
                     <div class="porfolio-item-inner outer-shadow">
                         <div class="porfolio-img">
                             <img src="img/proyecto-1/MéxicoIsland.png" alt="Porfolio" 
-                            data-screenshots="img/proyecto-1/MéxicoIsland.png, img/proyecto-1/2.png, img/proyecto-1/3.png, img/proyecto-1/4.png, img/proyecto-1/5.png, img/proyecto-1/6.png">
+                            data-screenshots="img/proyecto-1/MéxicoIsland.png, img/proyecto-2/2, img/proyecto-1/3.png, img/proyecto-1/4.png, img/proyecto-1/5.png, img/proyecto-1/6.png">
                             <span class="view-project">View Proyect</span>
                         </div>
                         <p class="porfolio-item-title">MéxicoIsland</p>
@@ -198,10 +203,10 @@
                                 <div class="info">
                                     <h3>Project inf</h3>
                                     <ul>
-                                        <li>Date - <span>2021</span></li>
-                                        <li>Client - <span>Coder Project</span></li>
-                                        <li>Tools - <span>HTML5, CCS3, SASS, Bootstrap5</span></li>
-                                        <li>Web- <span><a href="https://diegobeca93.github.io/Proyecto-MexicoIsland/">MexicoIsland</a></span></li>
+                                        <li>Date - <span>2021.</span></li>
+                                        <li>Client - <span>Coder Project.</span></li>
+                                        <li>Tools - <span>HTML5, CCS3, SASS, Bootstrap5.</span></li>
+                                        <li>Web- <span><a href="https://diegobeca93.github.io/Proyecto-MexicoIsland/" target="_blank">MexicoIsland</a></span></li>
                                     </ul>
                                 </div>
                             </div>
@@ -214,24 +219,28 @@
                 <div class="porfolio-item">
                     <div class="porfolio-item-inner outer-shadow">
                         <div class="porfolio-img">
-                            <img src="img/next project.png" alt="Next project" data-screenshots= "img/next project.png">
+                            <img src="img/Proyecto-2/1.jpg" alt="img-libroPotter" data-screenshots="img/Proyecto-2/1.jpg, img/Proyecto-2/2.jpg, img/Proyecto-2/3.jpg, img/Proyecto-2/4.jpg, img/Proyecto-2/5.jpg, img/Proyecto-2/6.jpg, img/Proyecto-2/7.jpg, img/Proyecto-2/8.jpg">
                             <span class="view-project">View Proyect</span>
                         </div>
-                        <p class="porfolio-item-title">Libros Harry Potter</p>
+                        <p class="porfolio-item-title">Potter Books</p>
                     <!-- Item details -->
                         <div class="porfolio-item-details">
                             <div class="row">
                                 <div class="description">
-                                    <h3>Next project</h3>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex cupiditate quaerat est sint. Placeat, minus?</p>
+                                    <h3>shopping cart</h3>
+                                    <p>
+                                        This is the final project that I did for Coderhouse where I am doing the programming courses.
+                                        With Javascript we add the products to the shopping cart, these are saved in a localstorage and the image slider was also made vanilla javascript.
+                                        Then there is a button where it takes you to another page to search for its characters that are called through an API.
+                                    </p>
                                 </div>
                                 <div class="info">
                                     <h3>Project inf</h3>
                                     <ul>
-                                        <li>Date - <span>?</span></li>
-                                        <li>Client - <span>?</span></li>
-                                        <li>Tools - <span>?</span></li>
-                                        <li>Web- <span><a href="#">Next project</a></span></li>
+                                        <li>Date - <span>2021.</span></li>
+                                        <li>Client - <span>Coderhouse.</span></li>
+                                        <li>Tools - <span>HTML5, CCS3, JavaScript, AJAX, JSON (API).</span></li>
+                                        <li>Web- <span><a href="https://diegobeca93.github.io/Libros-Potter/" target="_blank">Potter Books</a></span></li>
                                     </ul>
                                 </div>
                             </div>
@@ -393,7 +402,7 @@
             <div class="project-main-inner">
                 <div class="project-main-btn outer-shadow">Project Details <i class="fas fa-plus"></i></div>
                 <div class="project-main-close outer-shadow"><i class="fa fa-times" aria-hidden="true"></i></div>
-                <img src="/img/proyecto-1/MéxicoIsland.png" class="p-img outer-shadow" alt="MexicoIsland-img">
+                <img src="#" class="p-img outer-shadow" alt="MexicoIsland-img">
                 <div class="project-counter">1 of 6</div>
                 <div class="project-prev outer-shadow"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
                 <div class="project-next outer-shadow"><i class="fa fa-arrow-right" aria-hidden="true"></i></div>
@@ -413,8 +422,14 @@
                     </div>
                 </div>
                 <div class="container-section">
-                    <div class="img-photo">
-                        <span>Diego Becacecci</span>
+                    <!-- <div class="img-photo">
+                    </div> -->
+                    <div class="photo">
+                        <h4>Diego <br> Becacecci</h4>
+                          <img src="img/20211101_020806.jpg" />
+                        <div class="glow-wrap">
+                          <i class="glow"></i>
+                        </div>
                     </div>
                     <div class="content-frame">
                         <div class="frame">                    
@@ -427,7 +442,7 @@
                             <a href="https://www.instagram.com/diegobecacecci/" target="_blank" class="btn">
                                 <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="#" class="btn">
+                            <a href="mailto:dbecacecci@gmail.com" class="btn">
                                 <i class="far fa-envelope"></i>
                             </a>
                         </div>
