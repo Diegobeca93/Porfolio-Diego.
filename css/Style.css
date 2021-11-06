@@ -1061,6 +1061,10 @@ h5 span:nth-child(15) {
         padding: 0;
         max-width: 100%;
     }
+    .about-section .about-info p {
+        display: block;
+        text-align: center;
+    }
     .about-section .about-info span {
         font-size: 25px;
     }
