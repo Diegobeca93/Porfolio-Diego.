@@ -229,6 +229,7 @@ contenido
 .home-video {
     object-fit: cover;
     max-height: 100vh;
+    filter: brightness(65%); 
 }
 
 h5 {
@@ -979,10 +980,28 @@ h5 span:nth-child(15) {
         font-size: 3em;
     }
     h5 {
-        top: 80%;    
+        top: 50%;
+        font-size: 2.5rem;    
     }
     .home-work {
-        top: 90%;
+        top: 65%;
+        font-size: 1.2rem;
+    }
+    .about-section .about-info {
+        padding: 0  ;
+    }
+    .about-section .about-info span {
+        display: flex;
+    }
+    .about-section .about-info p {
+        margin: 20px;
+    }
+    .btn-inf {
+        justify-content: space-evenly;
+    }
+    .CV, 
+    .Hire-me {
+        font-weight: 500;
     }
     .wrapper {
         margin: 66px 0;
@@ -995,6 +1014,9 @@ h5 span:nth-child(15) {
     }
     .porfolio-item {
         max-width: 100%;
+    }
+    .project-details-title {
+        padding: 15px 205px;
     }
     .photo img {
         width: 350px;
@@ -1042,13 +1064,19 @@ h5 span:nth-child(15) {
     }
     .header .nav-inner {
         width: 100vw;
+        height: 100vh;
     }
     .nav-links .nav-link::before {
         font-size: 1.8em;
         transform: translate(-35%, -50%);
     }
     h5 {
-        font-size: 2rem;   
+        font-size: 2rem;
+        top: 90%;   
+    }
+    .home-work {
+        font-size: 1rem;   
+        top: 97%;
     }
     .row-nav {
         display: flex;
@@ -1081,10 +1109,6 @@ h5 span:nth-child(15) {
     } 
     .CV {
         margin-bottom: 15px;
-    }
-    .home-work {
-        font-size: 1rem;   
-        top: 85%;
     }
     .skill {
         display: flex;
@@ -1147,17 +1171,22 @@ h5 span:nth-child(15) {
         height: auto;
     }
     h4 {
-        transform: translate(-83%, -55%);
+        transform: translate(-80%, -110%);
         font-size: 25px;
     }
     .content-frame {
         top: 0;
-        margin-top: 50px;
+        margin-top: 25px;
         justify-content: center;
         display: flex;
     }
     .frame {
         width: 300px;
+        height: 100%;
+        box-shadow: none;
+    }
+    .btn {
+        height: 50px;
     }
     .project-details-title{
         padding: 15px 150px;
